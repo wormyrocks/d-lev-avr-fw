@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make",
+            "detail": "Run make",
+            "type": "shell",
+            "command": "${input:makeTarget} ",
+            "options": {
+                "env": {}
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            }
+        }
+    ],
+    "inputs": [
+        { 
+            "type": "pickString", 
+            "id": "makeTarget", "description": "Select a build target", 
+            "options": [
+                "make -j all", "make avrdude",
+            ],
+            "default": "make all"
+        }
+    ]
+}

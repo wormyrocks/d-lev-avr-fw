@@ -1,0 +1,17 @@
+.DS_Store
+.idea/
+*.a
+*.o
+*.out
+*.exe
+*.elf
+*.hex
+*.lss
+obj
+*.bin
+*.eep
+*.sym
+*.map
+.vs/
+Debug/
+*.componentinfo.xml
